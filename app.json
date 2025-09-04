@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Sudan TV",
+  "slug": "sudan-tv",
+    "slug": "sudantv",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "owner": "bedaya",
+    "projectId": "your-project-id",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bedaya.sudantv"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.bedaya.sudantv",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/icon.png",
+      "bundler": "metro"
+    },
+    "scheme": "sudantv",
+    "plugins": [
+      "expo-router",
+      "expo-av",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#FFFAE5",
+          "sounds": []
+        }
+      ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "7f3e0730-3693-4a49-91b4-9a617f834328"
+      }
+    }
+  }
+}

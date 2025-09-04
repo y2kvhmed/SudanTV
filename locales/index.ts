@@ -1,0 +1,81 @@
+import { I18n } from 'i18n-js';
+import * as Localization from 'expo-localization';
+
+const i18n = new I18n({
+  en: {
+    welcome: 'Welcome to SudanTV',
+    continue: 'Continue',
+    login: 'Login',
+    signup: 'Sign Up',
+    email: 'Email',
+    password: 'Password',
+    name: 'Name',
+    confirmPassword: 'Confirm Password',
+    forgotPassword: 'Forgot Password?',
+    home: 'Home',
+    search: 'Search',
+    myList: 'My List',
+    profile: 'Profile',
+    trending: 'Trending Now',
+    newReleases: 'New Releases',
+    sudaneseSpotlight: 'Sudanese Spotlight',
+    movies: 'Movies',
+    series: 'Series',
+    shows: 'Shows',
+    documentaries: 'Documentaries',
+    youtube: 'YouTube',
+    playNow: 'Play Now',
+    moreInfo: 'More Info',
+    addToList: 'Add to My List',
+    removeFromList: 'Remove from My List',
+    settings: 'Settings',
+    changePassword: 'Change Password',
+    logout: 'Logout',
+    language: 'Language',
+    broadcast: 'Live TV',
+    continueWatching: 'Continue Watching',
+    searchPlaceholder: 'Search movies, series, shows...',
+  },
+  ar: {
+    welcome: 'مرحباً بك في تلفزيون السودان',
+    continue: 'متابعة',
+    login: 'تسجيل الدخول',
+    signup: 'إنشاء حساب',
+    email: 'البريد الإلكتروني',
+    password: 'كلمة المرور',
+    name: 'الاسم',
+    confirmPassword: 'تأكيد كلمة المرور',
+    forgotPassword: 'نسيت كلمة المرور؟',
+    home: 'الرئيسية',
+    search: 'البحث',
+    myList: 'قائمتي',
+    profile: 'الملف الشخصي',
+    trending: 'الأكثر رواجاً',
+    newReleases: 'الإصدارات الجديدة',
+    sudaneseSpotlight: 'الضوء السوداني',
+    movies: 'الأفلام',
+    series: 'المسلسلات',
+    shows: 'البرامج',
+    documentaries: 'الوثائقيات',
+    youtube: 'يوتيوب',
+    playNow: 'شاهد الآن',
+    moreInfo: 'المزيد',
+    addToList: 'إضافة لقائمتي',
+    removeFromList: 'إزالة من قائمتي',
+    settings: 'الإعدادات',
+    changePassword: 'تغيير كلمة المرور',
+    logout: 'تسجيل الخروج',
+    language: 'اللغة',
+    broadcast: 'البث المباشر',
+    continueWatching: 'متابعة المشاهدة',
+    searchPlaceholder: 'البحث عن الأفلام والمسلسلات والبرامج...',
+  },
+});
+
+// Set default locale with fallback
+const deviceLocale = Localization.locale || 'en';
+i18n.locale = deviceLocale.startsWith('ar') ? 'ar' : 'en';
+i18n.enableFallback = true;
+i18n.defaultLocale = 'en';
+
+export default i18n;
