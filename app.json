@@ -36,8 +36,7 @@
     },
     "web": {
       "favicon": "./assets/icon.png",
-      "bundler": "metro",
-      "output": "static"
+      "bundler": "webpack"
     },
     "scheme": "sudantv",
     "plugins": [
